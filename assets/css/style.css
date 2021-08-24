@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color: #fce1f1;
+}
+
+header{
+    display: flex;
+    margin: 0 90px;
+    
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header div{
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    color: black;  
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}
+
+header a{
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+header a img{
+    width: 80px;
+    padding-top: 30px;
+}
+
+header a span{
+    padding: 0 0 10px 15px;
+    font-size: 40px;
+    color: black;   
+    font-family: 'Patrick Hand', cursive;
+}
