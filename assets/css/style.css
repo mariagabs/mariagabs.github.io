@@ -1,52 +1,192 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-body{
-    background-color: #fce1f1;
+body {
+  background-color: #ffeff8;
+  font-family: "Nunito", sans-serif;
 }
 
-header{
-    display: flex;
-    margin: 0 90px;
-    
-    justify-content: space-between;
-    align-items: flex-end;
+.container {
+  width: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
 }
 
-header div{
-    display: flex;
-    width: 15%;
-    justify-content: space-between;
-    color: black;  
-    font-size: 18px;
-    font-family: 'Nunito', sans-serif;
+header {
+  display: flex;
+  align-items: flex-end;
 }
 
-header a{
-    display: flex;
-    align-items: flex-end;
-    
+header div {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+  color: black;
 }
 
-header a img{
-    width: 80px;
-    padding-top: 30px;
+header a:hover {
+  border-bottom: 2px solid #000;
 }
 
-header a span{
-    padding: 0 0 10px 15px;
-    font-size: 40px;
-    color: black;   
-    font-family: 'Patrick Hand', cursive;
+header a:first-child {
+  display: flex;
+  align-items: flex-end;
+  margin-right: auto;
+}
+
+header a:first-child:hover {
+  border: 0;
+}
+
+header a {
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+header a img {
+  width: 80px;
+  padding-top: 30px;
+}
+
+header a span {
+  padding: 0 0 10px 15px;
+  font-size: 40px;
+  color: black;
+  font-weight: normal;
+  font-family: "Patrick Hand", cursive;
+}
+
+.cats-pics {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.cats-pics img {
+  width: 900px;
+  height: 500px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.list-cats {
+  margin-top: 80px;
+}
+
+.list-cats h1 {
+  margin-bottom: 50px;
+}
+
+.list li {
+  width: 300px;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+}
+
+.list li:nth-child(4n + 4) {
+  margin-right: 0;
+}
+
+.list li {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 18px 17px -14px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 18px 17px -14px rgba(0, 0, 0, 0.12);
+}
+
+.list li img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list h1 {
+  font-size: 24px;
+}
+
+.list p {
+  font-size: 14px;
+}
+
+.info {
+  padding: 15px 30px;
+}
+
+.info h1 {
+  margin-bottom: 10px;
+}
+
+.list li [data-slide] {
+  position: relative;
+}
+[data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+[data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+  z-index: 1;
+}
+
+/* 6 CSS recomendado para a navegação */
+[data-slide-nav] {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+[data-slide-nav] > button {
+  display: inline-block;
+  width: 12px;
+  margin: 4px;
+  height: 12px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  background: #000;
+  text-indent: -100px;
+  overflow: hidden;
+}
+[data-slide-nav] > button.active {
+  background: #f2a4d1;
+}
+
+.dashboards {
+  margin-top: 60px;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.dashboard canvas {
+  max-width: 500px !important;
+  max-height: 500px !important;
 }

@@ -3,22 +3,38 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ConFusion</title>
+    <title>we ♡ cats</title>
     <base href="/">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./assets/css/style.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="icon" type="image/x-icon" href="./assets/img/cat.ico">
 </head>
 
 <body>
-    <header>
-        <a href="#"><img src="./assets/cat.png" alt="Cats"><span>we ♡ cats</span></a>
-        <div>
-            <a href="#">Home</a>
-            <a href="#">Dashboard</a>
+    <div class="container">
+        <header>
+            <a href="/index.html"><img src="./assets/img/cat.png" alt="Cats"><span>we ♡ cats</span></a>
+            <a href="/index.html">Home</a>
+            <a href="/dashboard.html">Dashboard</a>
+        </header>
+        <div class="cats-pics" data-slide="cats">
+            <img src="./assets/img/_111434467_gettyimages-1143489763.jpg" alt="Beautiful cat">
+            <img src="./assets/img/38287602_1893739020646891_2690055257207078912_n.jpg" alt="Beautiful cat">
+            <img src="./assets/img/10-Best-Names-For-Black-Cats.jpg" alt="Beautiful cat">
         </div>
-    </header>
+        <div class="list-cats">
+            <h1>Let's get to know some cat breeds!</h1>
+            <ul id="cat-list" class="list">
+            </ul>
+        </div>
+    </div>
+
+    <script src="./assets/js/simple-anime.js"></script>
+    <script src="./assets/js/simple-slide.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
