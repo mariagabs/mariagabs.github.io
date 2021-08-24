@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site URL](https://mariagabs.github.io/dashboard.html)
+- [Live Site URL](https://mariagabs.github.io/index.html)
 
 ## My process
 
