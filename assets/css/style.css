@@ -190,3 +190,12 @@ header a span {
   max-width: 500px !important;
   max-height: 500px !important;
 }
+
+.dashboard div {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 12px 13px 15px -12px rgba(0, 0, 0, 0.2);
+  box-shadow: 12px 13px 15px -12px rgba(0, 0, 0, 0.2);
+}
